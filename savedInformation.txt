@@ -1,0 +1,1 @@
+{"disicplineName":"мат","labNumber":"2","lecNumber":"2","curs":"курс: 2","semestr":"семестр: 2","knowledgeControl":"экзамен","cafedra":"инф. и web дизайна","fio":"Плющ А.В.","audienceNumber":"2"}
