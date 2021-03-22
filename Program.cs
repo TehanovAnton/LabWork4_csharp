@@ -16,7 +16,7 @@ namespace LabWork2_elementyUprvlenia
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DisciplineForm());
+            Application.Run(new SimpleDisciplneForm());
         }
     }
 }

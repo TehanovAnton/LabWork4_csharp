@@ -45,7 +45,7 @@ namespace LabWork2_elementyUprvlenia
             this.zachyt = new System.Windows.Forms.RadioButton();
             this.akzamen = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.infoBox = new System.Windows.Forms.TextBox();
             this.ShowWin = new System.Windows.Forms.TextBox();
             this.ShowSavedButton = new System.Windows.Forms.Button();
             this.Styles = new System.Windows.Forms.Button();
@@ -232,15 +232,15 @@ namespace LabWork2_elementyUprvlenia
             this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.LectorButton);
             // 
-            // textBox2
+            // infoBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(271, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(406, 26);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.UseWaitCursor = true;
+            this.infoBox.Location = new System.Drawing.Point(271, 48);
+            this.infoBox.Name = "infoBox";
+            this.infoBox.ReadOnly = true;
+            this.infoBox.Size = new System.Drawing.Size(406, 26);
+            this.infoBox.TabIndex = 8;
+            this.infoBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.infoBox.UseWaitCursor = true;
             // 
             // ShowWin
             // 
@@ -272,6 +272,7 @@ namespace LabWork2_elementyUprvlenia
             this.Styles.TabIndex = 11;
             this.Styles.Text = "стили";
             this.Styles.UseVisualStyleBackColor = true;
+            this.Styles.UseWaitCursor = true;
             this.Styles.Click += new System.EventHandler(this.Styles_Click);
             // 
             // DisciplineForm
@@ -284,7 +285,7 @@ namespace LabWork2_elementyUprvlenia
             this.Controls.Add(this.Styles);
             this.Controls.Add(this.ShowSavedButton);
             this.Controls.Add(this.ShowWin);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.infoBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.labNumber);
@@ -331,7 +332,7 @@ namespace LabWork2_elementyUprvlenia
         private System.Windows.Forms.RadioButton zachyt;
         private System.Windows.Forms.RadioButton akzamen;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox infoBox;
         private System.Windows.Forms.TextBox ShowWin;
         private System.Windows.Forms.Button ShowSavedButton;
         private System.Windows.Forms.Button Styles;

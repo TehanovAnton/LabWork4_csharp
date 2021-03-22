@@ -52,8 +52,10 @@
   <ItemGroup>
     <Compile Include="BSTUStudy.cs" />
     <Compile Include="Discipline.cs" />
+    <Compile Include="DisciplineFormState.cs" />
     <Compile Include="FormsStyle.cs" />
     <Compile Include="IDiscipline.cs" />
+    <Compile Include="ISimpleDisciplineForm.cs" />
     <Compile Include="ILecturer.cs" />
     <Compile Include="IStudy.cs" />
     <Compile Include="IStudyPlaneBuilder.cs" />
@@ -73,6 +75,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Prototype.cs" />
+    <Compile Include="SimpleDisciplneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="StudyPlane.cs" />
     <Compile Include="StudyPlaneBuilder.cs" />
     <EmbeddedResource Include="DisciplineForm.resx">

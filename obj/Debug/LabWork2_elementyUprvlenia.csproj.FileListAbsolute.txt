@@ -26,3 +26,17 @@ C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решени�
 C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork4_paterns\obj\Debug\LabWork2_elementyUprvlenia.csproj.CopyComplete
 C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork4_paterns\obj\Debug\LabWork2_elementyUprvlenia.exe
 C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork4_paterns\obj\Debug\LabWork2_elementyUprvlenia.pdb
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\obj\Debug\LabWork2_elementyUprvlenia.csprojAssemblyReference.cache
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\obj\Debug\LabWork2_elementyUprvlenia.DisciplineForm.resources
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\obj\Debug\LabWork2_elementyUprvlenia.LecturerForm.resources
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\obj\Debug\LabWork2_elementyUprvlenia.Properties.Resources.resources
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\obj\Debug\LabWork2_elementyUprvlenia.csproj.GenerateResource.cache
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\obj\Debug\LabWork2_elementyUprvlenia.csproj.CoreCompileInputs.cache
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\obj\Debug\LabWork2_elementyUprvlenia.exe
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\obj\Debug\LabWork2_elementyUprvlenia.pdb
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\bin\Debug\LabWork2_elementyUprvlenia.exe.config
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\bin\Debug\LabWork2_elementyUprvlenia.exe
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\bin\Debug\LabWork2_elementyUprvlenia.pdb
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Anton\source\repos\pacei_NV_OOTP\лабораторные\решения\LabWork5(патерны поведения, структуры)\LabWork4_csharp\obj\Debug\LabWork2_elementyUprvlenia.csproj.CopyComplete

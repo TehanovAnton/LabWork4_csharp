@@ -14,14 +14,14 @@ namespace LabWork2_elementyUprvlenia
 {
     public partial class DisciplineForm : Form
     {
-        private readonly IStudy study;
+        public readonly IStudy study;
         public StudyPlane studyPlane;
         public StudyPlaneBuilder studyPlaneBuilder;
-        private FormsStyle formsStyle;
+        public FormsStyle formsStyle;
+        public LecturerForm lecturerForm;
 
-        private LecturerForm lecturerForm;
 
-        private readonly Action<KeyPressEventArgs> AddLetter = (e) =>
+        public readonly Action<KeyPressEventArgs> AddLetter = (e) =>
         {
             char entered = e.KeyChar;
             if (Char.IsLetter(entered) || Char.IsControl(entered))
@@ -29,7 +29,14 @@ namespace LabWork2_elementyUprvlenia
             else
                 e.Handled = true;
         };
-        private readonly Func<DisciplineForm, bool> CheckDiscipline = (discipline) =>
+        public readonly Action<RadioButton, RadioButton, string, string> radioButtonSetting = (button1, button2, stateText, text) =>
+        {
+            if (stateText == text)
+                button1.Focus();
+            else
+                button2.Focus();
+        };
+        public readonly Func<DisciplineForm, bool> CheckDiscipline = (discipline) =>
         {
             bool semestr = false;
             bool curs = false;
@@ -49,6 +56,7 @@ namespace LabWork2_elementyUprvlenia
             semestr && curs && knowlegControl;
         };
 
+
         public DisciplineForm()
         {
             InitializeComponent();
@@ -58,7 +66,18 @@ namespace LabWork2_elementyUprvlenia
             formsStyle = FormsStyle.GetInstance();
         }
 
-        private void Save()
+
+        public void SetInfoBox(string text)
+        {
+            infoBox.Text = text;
+        }
+        public void SetShowWin(string text)
+        {
+            ShowWin.Text = text;
+        }
+
+
+        public void Save()
         {
             studyPlaneBuilder.BuildDiscipline(disciplineName.Text, labNumber.Text, lecNumber.Text,
                 firstCurs.Checked ? "курс: 1" : "курс: 2", firstSemestr.Checked ? "семестр: 1" : "семестр: 2",
@@ -66,7 +85,7 @@ namespace LabWork2_elementyUprvlenia
 
             lecturerForm = new LecturerForm(this);
         }
-        private void ShowSaved(StudyPlane saved)
+        public void ShowSaved(StudyPlane saved)
         {
             var cloneLecturer = saved.lecturer.DeepCopy();
             var cloneDiscipline = saved.discipline.DeepCopy();
@@ -84,42 +103,39 @@ namespace LabWork2_elementyUprvlenia
                     saved.discipline.curs, saved.discipline.semestr, cloneDiscipline.knowledgeControl,
                     cloneLecturer.fio, cloneLecturer.cafedra, cloneLecturer.audienceNumber);
         }
-        private void Discipline_Load(object sender, EventArgs e)
+        public void Discipline_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void LectorButton(object sender, EventArgs e)
+        public DisciplineFormState getState()
         {
-            if (CheckDiscipline(this))
-            {
-                Save();
-                textBox2.Text = "сохранено";
-
-                this.Hide();                
-                lecturerForm.Show();
-            }
-            else
-                textBox2.Text = "данные не введены";
+            return new DisciplineFormState(
+                    disciplineName.Text, labNumber.Text,
+                    lecNumber.Text, firstCurs.Checked ? "курс: 1" : "курс: 2",
+                    firstSemestr.Checked ? "семестр: 1" : "семестр: 2", akzamen.Checked ? "экзамен" : "зачёт",
+                    ShowWin.Text, infoBox.Text
+                );
+        }
+        public void setState(DisciplineFormState state)
+        {
+            disciplineName.Text = state.disicplineName;
+            labNumber.Text = state.labNumber;
+            lecNumber.Text = state.lecNumber;
+            radioButtonSetting(firstCurs, secondCurs, state.curs, "курс: 1");
+            radioButtonSetting(firstCurs, secondCurs, state.curs, "экзамен");
+            infoBox.Text = state.infoBox;
         }
 
-        private void TextBox1_KeyPress(object sender, KeyPressEventArgs e)
+
+        public virtual void LectorButton(object sender, EventArgs e)
         {
-            AddLetter(e);
+
         }
-
-        private void ShowSavedButton_Click(object sender, EventArgs e)
+        public virtual void ShowSavedButton_Click(object sender, EventArgs e)
         {
-            StudyPlane saved = new StudyPlane();
-            using(StreamReader reader = new StreamReader(BSTUStudy.filePath))
-                saved = JsonConvert.DeserializeObject<StudyPlane>(reader.ReadToEnd());
-
-            ShowSaved(saved);
         }
-
-        private void Styles_Click(object sender, EventArgs e)
+        public virtual void Styles_Click(object sender, EventArgs e)
         {
-            ShowWin.Text = formsStyle.GetInfoString();
         }
     }
 }
